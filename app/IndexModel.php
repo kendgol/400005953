@@ -25,19 +25,6 @@ class IndexModel extends ObservableModel {
         
         return ['popular'=>$popular, 'recommended'=>$recommended ];
         
-       
-        
-        
-
-
-
-        //     //Read the json file
-        //     $json = file_get_contents('./data/user.json');
-        //     //Convert JSON object to PHP object
-        //     $json_record = json_decode($json, true);
-    
-        //    //return database record
-        //    return ($json_record);
     
     }
 

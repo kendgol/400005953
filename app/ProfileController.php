@@ -8,6 +8,7 @@ class ProfileController extends Controller
         SessionClass::create( );
 
         $session = new SessionClass();
+        $session->remove("user");
         $view = new View();
         
         $view->setTemplate(TPL_DIR . '/profile.tpl.php' );
@@ -34,17 +35,17 @@ class ProfileController extends Controller
         }
     }
 
-    public function CreateModel() : ObservableModel
-	{
-		return new ProfileModel();
-	}
+    // public function CreateModel() : ObservableModel
+	// {
+	// 	return new ProfileModel();
+	// }
 
-	public function CreateView() : View
-	{
-		$view = new View();
-        $view->setTemplate(TPL_DIR . '/profile.tpl.php');
-		return $view;
-	}
+	// public function CreateView() : View
+	// {
+	// 	$view = new View();
+    //     $view->setTemplate(TPL_DIR . '/profile.tpl.php');
+	// 	return $view;
+	// }
     
 
 }
