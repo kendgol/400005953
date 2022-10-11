@@ -20,12 +20,12 @@ class SessionTest extends TestCase
        $this->assertIsObject($validSession, "Valid Session Object Created.");//valid View object is created
     }
 
-    public function test_create():void
-    {
-        // $validSession = new sessionClass();
-        $new = $this->c->create();
-        $this->assertContains($new,"New Session created");
-    }
+    // public function test_create():void
+    // {
+    //     // $validSession = new sessionClass();
+    //     $new = $this->c->create();
+    //     $this->assertContains($new,"New Session created");
+    // }
 
 //     public function test_destroy():void 
 //     {

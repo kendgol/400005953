@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 
 // declare(strict_types=1);
-require __DIR__ . "/../app/View.php";
+require __DIR__ . "/../framework/View.php";
 
 
 class ViewTest extends TestCase
