@@ -34,19 +34,6 @@ class ProfileController extends Controller
         $view->display();
         }
     }
-
-    // public function CreateModel() : ObservableModel
-	// {
-	// 	return new ProfileModel();
-	// }
-
-	// public function CreateView() : View
-	// {
-	// 	$view = new View();
-    //     $view->setTemplate(TPL_DIR . '/profile.tpl.php');
-	// 	return $view;
-	// }
     
-
 }
 ?>

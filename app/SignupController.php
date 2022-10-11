@@ -5,12 +5,12 @@ class SignupController extends Controller
 
 	public function run() {
         //create model object
+        $session = new SessionClass();
         $view = new View();
-        //set the template
-        $view->setTemplate(TPL_DIR . '/index.tpl.php');
+        $view->setTemplate(TPL_DIR . '/signup.tpl.php');
 
         //set the model
-        $this->setModel(new IndexModel());
+        $this->setModel(new SignupModel());
         //set the view
         $this->setView($view);
 
@@ -23,7 +23,7 @@ class SignupController extends Controller
         $this->model->modifyChangedData($data);
 
         // tell the model to contact its observers
-        $this->model->notify( ) ;
+        $this->model->notify() ;
         }
 
 }
