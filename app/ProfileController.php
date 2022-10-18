@@ -23,7 +23,7 @@ class ProfileController extends Controller
         if ($session->accessible($user, 'profile')) {
         
         //Retrieve courses the user is registered in
-        $data = $this->model->getAll( );
+        $data = $this->model->getAll();
         //Notify model to update the changed data
         $this->model->modifyChangedData($data);
         // tell the model to contact its observers

@@ -1,7 +1,7 @@
 {
     "users": 
     [
-        {"name": "Test User","email": "tester@comp3170.com ","password": "Testpassw0rd"},
+        {"name": "Test User","email": "tester@comp3170.com","password": "Testpassw0rd"},
         {"name": "Michael Godborn","email": "archangelmichael@gmail.com","password": "777Gpassword"},
         {"name": "James Storm","email": "stormerg@yahoo.com","password": "ageof7Wind$"}
 

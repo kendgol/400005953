@@ -8,14 +8,14 @@
     // assigns the Model object to the protected attribute $model in the Controller class, which is initialized as null
     protected function setModel(Model $m)
     {
-        $this->model = $model;
+        $this->model = $m;
     }
 
 
     // assigns the View object to the protected attribute $view in the Controller class, which is initialized as null.
     protected function setView(View $v)
     {
-        $this->view = $view;
+        $this->view = $v;
     }
 
     //performs the page’s business logic

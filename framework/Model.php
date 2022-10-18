@@ -16,10 +16,10 @@ abstract class Model {
     public function loadData(string $fromFile):array {
 
         //the filename
-        $file = basename($fromFile, '.json' );
+        $file = basename($fromFile, '.json');
 
         //Check if file is empty or decoded
-        if ($isset($this->caching[$file]) || empty($this->caching[$file]))
+        if (isset($this->caching[$file]) || empty($this->caching[$file]))
         {
                 //Read file contents
                 $json_file=file_get_contents($fromFile);

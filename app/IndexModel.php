@@ -1,5 +1,5 @@
 <?php
-require "autoload.php";
+// require "autoload.php";
 
 // require __DIR__ . "/../framework/ObservableModel.php";
 

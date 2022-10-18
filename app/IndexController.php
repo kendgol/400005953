@@ -17,17 +17,17 @@ class IndexController extends Controller {
             $this->setModel(new IndexModel());
             //set the view
             $this->setView($view);
-
+            //tell the mdoel to update the change data 
             $this->model->attach($this->view);
 
          
-            $data = $this->model->getAll() ;
+            $data = $this->model->getAll();
 
             // tell the model to update the changed data
             $this->model->modifyChangedData($data);
 
             // tell the model to contact its observers
-            $this->model->notify( ) ;
+            $this->model->notify();
             }
 
 

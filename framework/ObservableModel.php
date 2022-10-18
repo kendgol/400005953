@@ -1,5 +1,5 @@
 <?php
-require "autoload.php";
+// require "autoload.php";
 // require __DIR__ . "/Model.php";
 // require __DIR__ . "/ObservableInterface.php";
 // require __DIR__ . "/ObserverInterface.php";
@@ -12,6 +12,7 @@ abstract class ObservableModel extends Model implements ObservableInterface {
 
     }
 
+    //Looks through and remove model from the array
     public function detach(ObserverInterface $observer_in): void
     {
         $this->observers = array_filter($this->observers, function ($next) use ($observer_in) {
